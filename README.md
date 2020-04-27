@@ -2,15 +2,6 @@
 
 A description of your orb. Utilize this orb to easily add X to your CI/CD pipeline.
 
-**TODO:**
-Publish your production orb! You may notice the badges above and links to the registry page below are not working yet, once you publish your first production version orb, these will begin to function.
-
-What to do:
-* Make changes to your `Alpha` branch.
-* Flush out your integration test jobs
-* Merge to `master` with "`[semver:major]`" in the commit subject to publish 1.0.0 of your orb.
-
-
 ## Usage
 
 Example use-cases are provided on the orb [registry page](https://circleci.com/orbs/registry/orb/bridgecrew/checkov#usage-examples). Source for these examples can be found within the `src/examples` directory.

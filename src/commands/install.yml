@@ -1,0 +1,7 @@
+description: |
+  Install checkov python package
+
+steps:
+  - run:
+      name: Install Checkov
+      command: pip install -U checkov
