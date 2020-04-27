@@ -32,17 +32,17 @@ workflows:
           name: trigger-integration-dev
           requires:
             - orb-tools/publish-dev
-#  integration-tests_prod-release:
-#    when: << pipeline.parameters.run-integration-tests >>
-#    jobs:
-#      - integration-test-1
-#      - orb-tools/dev-promote-prod-from-commit-subject:
-#          orb-name: bridgecrew/checkov
-#          add-pr-comment: false
-#          fail-if-semver-not-indicated: false
-#          publish-version-tag: false
-#          requires:
-#            - integration-test-1
-#          filters:
-#            branches:
-#              only: master
+  integration-tests_prod-release:
+    when: << pipeline.parameters.run-integration-tests >>
+    jobs:
+      - integration-test-1
+      - orb-tools/dev-promote-prod-from-commit-subject:
+          orb-name: bridgecrew/checkov
+          add-pr-comment: false
+          fail-if-semver-not-indicated: false
+          publish-version-tag: false
+          requires:
+            - integration-test-1
+          filters:
+            branches:
+              only: master
