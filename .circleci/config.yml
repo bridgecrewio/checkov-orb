@@ -14,7 +14,10 @@ jobs:
     executor: checkov/default
     steps:
       - checkout
-      - checkov/scan
+      - checkov/scan:
+          directory: "."
+          soft-fail: true
+          output: "cli"
 
 workflows:
   lint_pack-validate_publish-dev:
