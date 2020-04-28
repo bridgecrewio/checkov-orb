@@ -50,6 +50,6 @@ steps:
           CMD_STR=$CMD_STR"-d $DIRECTORY "
         fi
         if [ $API_KEY != $NONE ]; then
-          CMD_STR=$CMD_STR"-api-key $API_KEY "
+          CMD_STR=$CMD_STR"--bc-api-key $API_KEY "
         fi
         echo $CMD_STR | sh
