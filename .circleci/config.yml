@@ -17,8 +17,6 @@ jobs:
       - checkov/scan:
           directory: "."
           api-key: "6bridgecrew-9example-2api-key1-demo9"
-          repo-id: "bridgecrewio/platform"
-          branch: "develop"
 workflows:
   lint_pack-validate_publish-dev:
     unless: << pipeline.parameters.run-integration-tests >>
