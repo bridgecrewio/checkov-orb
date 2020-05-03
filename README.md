@@ -14,7 +14,7 @@ In fact, it is very easy to start using the Orb.
 All you need to do is:
 
 1. Follow the instructions at the [Orb Quick Start Guide](https://circleci.com/orbs/registry/orb/bridgecrew/checkov#quick-start) to enable usage of Orbs in your project workflow.
-2. Set up an environment variable with your Bridgecrew API token, which you can get from your [Bridgecrew account](https://www.bridgecrew.cloud/integrations).
+2. Set up an environment variable with your Bridgecrew API key, which you can get from your [Bridgecrew account](https://www.bridgecrew.cloud/integrations).
 3. In the app build job, call the `checkov/scan`
 4. Optionally, supply parameters to customize orb behaviour
 
@@ -85,7 +85,7 @@ Full reference docs https://circleci.com/orbs/registry/orb/bridgecrew/checkov
 
 | Parameter  | Description | Required | Default | Type |
 | -----------| -------------------------------------------------------------------------------------------------------- | ------------- | ------------- | ------------- |
-| api-token | API token from Bridgecrew app | no | "none" | string |
+| api-key | API key from Bridgecrew app | no | "none" | string |
 | branch | Branch within the repository for checkov to scan | no | "master" | string |
 | directory | IaC root directory to scan | no | "none" | string |
 | file | IaC file to scan | no | "none" | string |
